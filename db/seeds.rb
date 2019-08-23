@@ -8,11 +8,11 @@ class Seed
   def generate_parks
     20.times do |i|
       park = Park.create!(
-        name: Faker::Book.author,
-        description: Faker::Movie.quote,
-        location: 
+        name: Faker::Lorem.words(number: 3).join(","),
+        description: Faker::Lorem.words(number: 25).join(","),
+        location: Faker::Lorem.words(number: 5).join(",")
       )
-      puts "Quote #{i}: Author is #{quote.author} and quotation is '#{quote.content}'."
+      puts "Park #{i}: name is #{park.name}, description is #{park.description} and location is #{park.location}."
     end
   end
 end
