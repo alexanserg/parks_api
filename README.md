@@ -21,4 +21,6 @@ functionality for retrieving, adding, updating and deleting parks in the portlan
 s
 
 
-# licensed under the MIT license
+#### Licensed under the MIT license.
+
+#### Copyright (c) 2019 by Alexander Sergejev
