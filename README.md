@@ -19,3 +19,8 @@ functionality for retrieving, adding, updating and deleting parks in the portlan
 * $ rails server
 * Using postman you can now make api calls using the url http://localhost:3000/parks
 s
+
+
+#### Licensed under the MIT license.
+
+#### Copyright (c) 2019 by Alexander Sergejev
