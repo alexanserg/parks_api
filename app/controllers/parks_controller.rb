@@ -1,11 +1,13 @@
 class ParksController < ApplicationController
-
+  @current_user ||= User.find(session[:user_id])
   def index
+    if current_user
     @parks = Park.all
     json_response(@parks)
   end
 
   def show
+    if current_user
     @park = Park.find(params[:id])
     json_response(@park)
   end
